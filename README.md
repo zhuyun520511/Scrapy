@@ -10,26 +10,26 @@
 - [使用Proxy代理IP实现强制爬取]
 
 ## :wrench:  数据解析
+- [xpath方法]
+- [BeautifulSoup4方法]
+- [Re方法]
 
-   1、xpath方法；
-   2、BeautifulSoup4方法；
-   3、Re方法；
   
 ## :floppy_disk: 数据储存
+- [CSV文本保存]
+- [json保存]
+- [数据库保存]
 
-   1、CSV文本保存；
-   2、json保存；
-   3、数据库保存；
  
 ## :pencil2: 爬虫速度升级
-   
-   1、多线程爬虫；
-   2、多进程爬虫；
-   3、多协程；
-   4、Scrapy；
+- [多线程爬虫]
+- [多进程爬虫]
+- [多协程]
+- [Scrapy]
+
 
 ## :bulb: 爬虫反爬问题
-   
-   1、Selenium；
-   2、代理IP爬取；
-   3、放慢速度；
+- [Selenium]
+- [代理IP爬取]
+- [放慢速度]
+
