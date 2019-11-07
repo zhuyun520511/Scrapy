@@ -1,14 +1,14 @@
 ## 爬虫学习
 
 ## :watermelon: 网络请求
+- [网络爬虫概述]
+- [HTTP协议与抓包工具]
+- [Python库--Urllib与Requests库]
+- [cookie原理与使用]
+- [伪装成浏览器]
+- [get请求与post请求]
+- [使用Proxy代理IP实现强制爬取]
 
-   1、网络爬虫概述；
-   2、HTTP协议与抓包工具；
-   3、Python库--Urllib与Requests库；
-   4、cookie原理与使用；
-   5、伪装成浏览器；
-   6、get请求与post请求；
-   7、使用Proxy代理IP实现强制爬取；
 ## :wrench:  数据解析
 
    1、xpath方法；
