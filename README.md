@@ -3,7 +3,7 @@ Scrapy
 
 ## :watermelon: 通用网络爬虫  
 - [抓取猫眼--BeautifulSoup的使用](https://github.com/KissMyLady/Scrapy/blob/master/Note/p_maoyan.md)    
-
+- [抓取猫眼--多进程及Queue](https://github.com/KissMyLady/Scrapy/blob/master/Note/p_maoyan_multi.md)    
 
 ## :wrench:  Scrapy框架  
 - 敬请期待
