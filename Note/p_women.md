@@ -2,7 +2,7 @@
 ====
 这是之前很就写的[美女网](https://www.plmm.com.cn/)小型爬虫, 现在没什么兴趣爬它了  
 当然, 下面的代码也是惨不忍睹, 仅供小白学习使用, 大佬如有兴趣, 看了可以指点指点, 洗耳恭听      
-```
+```Python
 port requests, re, random, os
 from bs4 import BeautifulSoup
 from multiprocessing import Pool
