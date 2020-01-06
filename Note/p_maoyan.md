@@ -9,20 +9,20 @@ import requests
 headers = {'User-Agent': 'yyy',  'Cookie': 'xxx'}
 
 for i in range(10):
-	url_saves = r"https://maoyan.com/board/4?offset=" + str(i * 10)
+    url_saves = r"https://maoyan.com/board/4?offset=" + str(i * 10)
 	
-	wb_data_new = requests.get(url_saves, headers=headers)
-	soup = BeautifulSoup(wb_data_new.text, 'lxml')
-	tops = soup.select("i.board-index")
-	titles = soup.select('dl.board-wrapper > dd > a ')
-	times = soup.select('p.releasetime')
-	In_stars = soup.select("p.star")
+    wb_data_new = requests.get(url_saves, headers=headers)
+    soup = BeautifulSoup(wb_data_new.text, 'lxml')
+    tops = soup.select("i.board-index")
+    titles = soup.select('dl.board-wrapper > dd > a ')
+    times = soup.select('p.releasetime')
+    In_stars = soup.select("p.star")
 	
-	for top, title, time, star in zip(tops, titles, times, In_stars):
-		print(  top.get_text(),
-		      title.get("title"),
-		       time.get_text()[5:],
-		       star.get_text()[20:28])
+    for top, title, time, star in zip(tops, titles, times, In_stars):
+        print(  top.get_text(),
+            title.get("title"),
+            time.get_text()[5:],
+            star.get_text()[20:28])
 ```
 
 很简单的规则, 通过url的变换参数, 提取不同网页的数据即可  
@@ -53,18 +53,16 @@ Beautiful Soup会帮你节省数小时甚至数天的工作时间, 当然, 其�
 html_doc = """
 <html>
 <head>
-	<title>The Dormouse's story</title>
+    <title>The Dormouse's story</title>
 </head>
 <body>
-	<p class="title"><b>The Dormouse's story</b></p>
-
-	<p class="story">Once upon a time there were three little sisters; and their names were
-	<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
-	<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
-	<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
-	and they lived at the bottom of a well.</p>
-
-	<p class="story">...</p>
+    <p class="title"><b>The Dormouse's story</b></p>
+    <p class="story">Once upon a time there were three little sisters; and their names were
+    <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+    <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+    <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+    and they lived at the bottom of a well.</p>
+    <p class="story">...</p>
 </body>
 """
 ```
@@ -79,17 +77,17 @@ print(soup.prettify())
 # <html>
 #  <head>
 #   <title>
-#    The Dormouse's story
+#        The Dormouse's story
 #   </title>
 #  </head>
 #  <body>
 #   <p class="title">
 #    <b>
-#     The Dormouse's story
+#       The Dormouse's story
 #    </b>
 #   </p>
 #   <p class="story">
-#    Once upon a time there were three little sisters; and their names were
+#     Once upon a time there were three little sisters; and their names were
 #    <a class="sister" href="http://example.com/elsie" id="link1">
 #     Elsie
 #    </a>
